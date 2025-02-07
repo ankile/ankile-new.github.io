@@ -103,7 +103,7 @@ h1 {
   height: 12em;
   float: left;
   overflow: hidden;
-  border-radius: 1em;
+  /* border-radius: 1em; */
 }
 
 #intro-image img {

@@ -35,11 +35,11 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      # Add this new step
       - name: Copy images
         run: |
-          mkdir -p _site/images
-          cp -r images/* _site/images/
+          sudo mkdir -p _site/images
+          sudo cp -r images/* _site/images/
+          sudo chmod -R 755 _site/images
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
